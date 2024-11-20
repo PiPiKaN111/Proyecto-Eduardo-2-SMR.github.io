@@ -1,0 +1,364 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    color: #4CAF50;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 250px;
+    border-radius: 5cqmax;
+}
+
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+#sobre-mi {
+    width: 100%; /* Hacer que la sección ocupe todo el ancho de la pantalla */
+    padding: 20px; /* Espacio interno */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+    margin-bottom: 20px; /* Separación con la caja siguiente */
+}
+
+h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: black; /* Color del título en negro */
+}
+
+.texto {
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.6; /* Aumentar la altura de línea para mejor legibilidad */
+    font-size: 1em; /* Tamaño de fuente estándar */
+    color: black; /* Color del texto en negro */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #555;
+}
+
+.texto {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.enunciado {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Redes sociales */
+#redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#redes-sociales ul li {
+    display: inline;
+}
+
+#redes-sociales ul li a {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#redes-sociales ul li a:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    text-align: center; /* Centra el texto y el contenido dentro de la sección */
+}
+
+/* Contacto */
+.email-link {
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Consentimiento de cookies */
+.cookie-consent {
+    background-color: #f4f4f4; /* Color de fondo claro */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto de elevación */
+}
+
+.cookie-consent a {
+    color: #007BFF;
+    font-weight: bold;
+    animation: fadeOut 5s forwards; /* Hace que el elemento desaparezca tras 5 segundos */
+}
+
+/* Animación para desvanecer el elemento */
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Comienza totalmente visible */
+    }
+    100% {
+        opacity: 0; /* Completamente invisible */
+        visibility: hidden; /* Oculta el elemento */
+    }
+}
+
+
+.cookie-consent a:hover {
+    text-decoration: underline;
+}
+/* Menú de navegación */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Activo para navegadores que usan :focus-visible */
+.nav-menu li a:focus-visible {
+    outline: 2px solid #007BFF;
+    background-color: #0056b3;
+}
+/* Estilo para justificar el texto */
+.justificado {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    background-color: #f4f4f4; /* Establece un color de fondo claro */
+}
+
+.header {
+    background-color: #4CAF50; /* Color de fondo verde para la cabecera */
+    color: white; /* Color del texto en la cabecera */
+    text-align: center; /* Centra el texto en la cabecera */
+    padding: 20px; /* Espaciado interno en la cabecera */
+}
+
+.header h1 {
+    margin: 0; /* Elimina el margen del título */
+    font-size: 2.5em; /* Tamaño de fuente grande para el título */
+}
+
+.header p {
+    margin: 10px 0 0; /* Margen superior para el párrafo, sin margen inferior */
+}
+/* Mis Proyectos */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas que ocupan el 100% del ancho */
+    gap: 20px; /* Espacio entre los proyectos */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+.project {
+    background-color: #f9f9f9; /* Color de fondo para los proyectos */
+    border: 1px solid #ddd; /* Borde alrededor de cada proyecto */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    text-align: justify; /* Centrar el texto */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+img {
+    display: block; /* Cambiar el display a block para que la imagen se comporte como un elemento de bloque, lo que permite aplicar márgenes automáticamente. */
+    margin: 0 auto; /* Centrar la imagen horizontalmente. El margen superior e inferior es 0, y los márgenes izquierdo y derecho son automáticos, lo que permite que la imagen se centre en su contenedor. */
+    max-width: 30%; /* Limitar el ancho máximo de la imagen al 30% del contenedor, asegurando que no se desborde. */
+    height: auto; /* Mantener la proporción de la imagen, ajustando la altura automáticamente en función del ancho para evitar distorsiones. */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+p {
+    padding: 0 10px; /* Espacio en los lados del texto */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    background-color: #f4f4f4; /* Establece un color de fondo claro */
+}
+
+.header {
+    background-color: #4CAF50; /* Color de fondo verde para la cabecera */
+    color: white; /* Color del texto en la cabecera */
+    text-align: center; /* Centra el texto en la cabecera */
+    padding: 20px; /* Espaciado interno en la cabecera */
+}
+
+.header h1 {
+    margin: 0; /* Elimina el margen del título */
+    font-size: 2.5em; /* Tamaño de fuente grande para el título */
+}
+
+.header p {
+    margin: 10px 0 0; /* Margen superior para el párrafo, sin margen inferior */
+}
+
+.contact-form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centra el formulario horizontalmente */
+    padding: 30px; /* Espaciado interno en el formulario */
+    background-color: white; /* Color de fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+.contact-form label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho */
+    margin-bottom: 5px; /* Margen inferior para las etiquetas */
+    font-weight: bold; /* Hace que el texto de las etiquetas sea más destacado */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    padding: 12px; /* Espaciado interno en los campos */
+    margin-bottom: 15px; /* Margen inferior para los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente para los campos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #4CAF50; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Color de fondo verde para el botón */
+    color: white; /* Color del texto en el botón */
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente del texto en el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para el color de fondo y el efecto de transformación */
+    width: 100%; /* Ancho completo del botón */
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón al pasar el mouse */
+}
+
+.submit-button:active {
+    transform: scale(0.95); /* Reduce el tamaño del botón al hacer clic */
+}
+.texto-descripcion {
+    color: black; /* Establece el color del texto de la clase 'texto-descripcion' a negro */
+    text-align: justify; /* Justifica el texto dentro de la clase 'texto-descripcion' */
+}
